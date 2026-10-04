@@ -9,12 +9,14 @@ namespace Session6
         M,
         F
     }
+    
     enum SecurityLevel
     {
         Guest,
         Developer,
         Secretary,
-        DBA
+        DBA,
+        SecurityOfficer
     }
     internal class Employee
     {
