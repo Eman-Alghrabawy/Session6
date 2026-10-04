@@ -58,18 +58,35 @@
             //Console.WriteLine(c.Area());
             //c.Print();
 
-            Shape shape = new Shape(2, 3);
-            Console.WriteLine(shape.Area());
-                //Output:6
-                //Called: Shape.Area()
-            Cube cube = new Cube(2, 3, 4);
-            Console.WriteLine(cube.Area());
-               //Output: 24
-               //Called: Cube.Area()
-            Shape shapeRef = new Cube(2, 3, 4);
-            Console.WriteLine(shapeRef.Area());
-               //Output: 6
-               //Called: Shape.Area()
+            //Shape shape = new Shape(2, 3);
+            //Console.WriteLine(shape.Area());
+            //    //Output:6
+            //    //Called: Shape.Area()
+            //Cube cube = new Cube(2, 3, 4);
+            //Console.WriteLine(cube.Area());
+            //   //Output: 24
+            //   //Called: Cube.Area()
+            //Shape shapeRef = new Cube(2, 3, 4);
+            //Console.WriteLine(shapeRef.Area());
+            //   //Output: 6
+            //   //Called: Shape.Area()
+
+
+            object obj = new Cube(1, 2, 3);
+
+            Console.WriteLine(obj.ToString());
+            
+           // What runs?
+
+           // Shape.ToString() runs.
+           // At runtime, C# looks at the actual object's type and finds the most appropriate overridden implementation.
+           // Why did ToString() behave polymorphically but Area() did not?
+
+           //The difference is override vs. new.
+           //Area() — Method Hiding
+           //new means hide the parent method.
+           //override means the child class provides a new implementation of a virtual method.
+
         }
 
     }
