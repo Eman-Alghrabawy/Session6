@@ -48,10 +48,15 @@
             //};
 
 
-            Shape s = new Shape(10, 5);
+            //Shape s = new Shape(10, 5);
 
-            Console.WriteLine(s.Area());
-            Console.WriteLine(s);
+            //Console.WriteLine(s.Area());
+            //Console.WriteLine(s);
+
+            Cube c = new Cube(10, 5, 2);
+
+            Console.WriteLine(c.Area());
+            c.Print();
         }
 
     }
