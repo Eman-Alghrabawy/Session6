@@ -72,9 +72,9 @@
             //   //Called: Shape.Area()
 
 
-            object obj = new Cube(1, 2, 3);
+            //object obj = new Cube(1, 2, 3);
 
-            Console.WriteLine(obj.ToString());
+            //Console.WriteLine(obj.ToString());
             
            // What runs?
 
@@ -86,6 +86,8 @@
            //Area() — Method Hiding
            //new means hide the parent method.
            //override means the child class provides a new implementation of a virtual method.
+
+
 
         }
 

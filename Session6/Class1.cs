@@ -52,47 +52,65 @@ namespace Session6
 
 
 
-    class Shape
+    //class Shape
+    //{
+    //    public double Width { get; set; }
+    //    public double Height { get; set; }
+
+    //    public Shape(double width, double height)
+    //    {
+    //        Width = width;
+    //        Height = height;
+    //    }
+
+    //    public double Area()
+    //    {
+    //        return Width * Height;
+    //    }
+
+    //    public override string ToString()
+    //    {
+    //        return $"(Width = {Width}, Height = {Height})";
+    //    }
+
+
+    //}
+    //class Cube : Shape
+    //{
+    //    public double Depth { get; set; }
+
+    //    public Cube(double width, double height, double depth)
+    //        : base(width, height)
+    //    {
+    //        Depth = depth;
+    //    }
+
+    //    public new double Area()
+    //    {
+    //        return base.Area() * Depth;
+    //    }
+
+    //    public void Print()
+    //    {
+    //        Console.WriteLine($"Width = {Width}, Height = {Height}, Depth = {Depth}");
+    //    }
+    //}
+
+
+    class Person
     {
-        public double Width { get; set; }
-        public double Height { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
 
-        public Shape(double width, double height)
+        public void Greet()
         {
-            Width = width;
-            Height = height;
+            Console.WriteLine("I am a person's basic data. Person.");
         }
 
-        public double Area()
+        public virtual void Display()
         {
-            return Width * Height;
-        }
-
-        public override string ToString()
-        {
-            return $"(Width = {Width}, Height = {Height})";
-        }
-
-        
-    }
-    class Cube : Shape
-    {
-        public double Depth { get; set; }
-
-        public Cube(double width, double height, double depth)
-            : base(width, height)
-        {
-            Depth = depth;
-        }
-
-        public new double Area()
-        {
-            return base.Area() * Depth;
-        }
-
-        public void Print()
-        {
-            Console.WriteLine($"Width = {Width}, Height = {Height}, Depth = {Depth}");
+            Console.WriteLine($"ID: {ID}, Name: {Name}, Age: {Age}");
         }
     }
 }
