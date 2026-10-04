@@ -9,12 +9,20 @@ namespace Session6
         M,
         F
     }
+    enum SecurityLevel
+    {
+        Guest,
+        Developer,
+        Secretary,
+        DBA
+    }
     internal class Employee
     {
        public int ID { get; set; }
        public string Name { get; set; }
-       public string SecurityLevel { get; set; }
-       public decimal Salary { get; set; }
+        //public string SecurityLevel { get; set; }
+        public SecurityLevel SecurityLevel { get; set; }
+        public decimal Salary { get; set; }
        public DateTime HireDate { get; set; }
         //public char Gender { get; set; }
         public Gender Gender { get; set; }

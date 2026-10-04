@@ -14,6 +14,8 @@
             //emp.Gender = 'F';
             emp.Gender = Gender.F;
 
+            emp.SecurityLevel = SecurityLevel.Developer;
+
 
             //HiringDate date = new HiringDate();
 
