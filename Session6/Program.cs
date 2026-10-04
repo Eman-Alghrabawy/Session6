@@ -53,10 +53,23 @@
             //Console.WriteLine(s.Area());
             //Console.WriteLine(s);
 
-            Cube c = new Cube(10, 5, 2);
+            //Cube c = new Cube(10, 5, 2);
 
-            Console.WriteLine(c.Area());
-            c.Print();
+            //Console.WriteLine(c.Area());
+            //c.Print();
+
+            Shape shape = new Shape(2, 3);
+            Console.WriteLine(shape.Area());
+                //Output:6
+                //Called: Shape.Area()
+            Cube cube = new Cube(2, 3, 4);
+            Console.WriteLine(cube.Area());
+               //Output: 24
+               //Called: Cube.Area()
+            Shape shapeRef = new Cube(2, 3, 4);
+            Console.WriteLine(shapeRef.Area());
+               //Output: 6
+               //Called: Shape.Area()
         }
 
     }
