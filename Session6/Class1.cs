@@ -113,4 +113,35 @@ namespace Session6
             Console.WriteLine($"ID: {ID}, Name: {Name}, Age: {Age}");
         }
     }
+
+
+    class Doctor : Person
+    {
+        public string Specialty { get; set; }
+
+        public new void Greet()
+        {
+            Console.WriteLine("I am a Doctor.");
+        }
+
+        public override void Display()
+        {
+            Console.WriteLine($"ID: {ID}, Name: {Name}, Age: {Age}, Specialty: {Specialty}");
+        }
+    }
+
+    class Engineer : Person
+    {
+        public string Field { get; set; }
+
+        public new void Greet()
+        {
+            Console.WriteLine("I am an Engineer.");
+        }
+
+        public override void Display()
+        {
+            Console.WriteLine($"ID: {ID}, Name: {Name}, Age: {Age}, Field: {Field}");
+        }
+    }
 }

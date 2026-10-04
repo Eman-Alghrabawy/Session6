@@ -75,19 +75,39 @@
             //object obj = new Cube(1, 2, 3);
 
             //Console.WriteLine(obj.ToString());
-            
-           // What runs?
 
-           // Shape.ToString() runs.
-           // At runtime, C# looks at the actual object's type and finds the most appropriate overridden implementation.
-           // Why did ToString() behave polymorphically but Area() did not?
+            // What runs?
 
-           //The difference is override vs. new.
-           //Area() — Method Hiding
-           //new means hide the parent method.
-           //override means the child class provides a new implementation of a virtual method.
+            // Shape.ToString() runs.
+            // At runtime, C# looks at the actual object's type and finds the most appropriate overridden implementation.
+            // Why did ToString() behave polymorphically but Area() did not?
 
+            //The difference is override vs. new.
+            //Area() — Method Hiding
+            //new means hide the parent method.
+            //override means the child class provides a new implementation of a virtual method.
 
+            Doctor doctor = new Doctor
+            {
+                ID = 1,
+                Name = "Ahmed",
+                Age = 35,
+                Specialty = "Cardiology"
+            };
+
+            doctor.Greet();
+            doctor.Display();
+
+            Engineer engineer = new Engineer
+            {
+                ID = 2,
+                Name = "Omar",
+                Age = 28,
+                Field = "Software Engineering"
+            };
+
+            engineer.Greet();
+            engineer.Display();
 
         }
 
