@@ -26,7 +26,19 @@ namespace Session6
        public DateTime HireDate { get; set; }
         //public char Gender { get; set; }
         public Gender Gender { get; set; }
-    }
+        public override string ToString()
+        {
+            return String.Format(
+                "ID: {0}, Name: {1}, Security Level: {2}, Salary: {3:C}, Hire Date: {4}, Gender: {5}",
+                ID,
+                Name,
+                SecurityLevel,
+                Salary,
+                HireDate,
+                Gender
+            );
+        }
+        }
 
 
     //class HiringDate
