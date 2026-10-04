@@ -25,27 +25,33 @@
             //date.Year = 2025;
 
 
-            Employee[] EmpArr = new Employee[3];
-            EmpArr[0] = new Employee
-            {
-                ID = 1,
-                Name = "Ahmed",
-                SecurityLevel = SecurityLevel.DBA
-            };
+            //Employee[] EmpArr = new Employee[3];
+            //EmpArr[0] = new Employee
+            //{
+            //    ID = 1,
+            //    Name = "Ahmed",
+            //    SecurityLevel = SecurityLevel.DBA
+            //};
 
-            EmpArr[1] = new Employee
-            {
-                ID = 2,
-                Name = "Omar",
-                SecurityLevel = SecurityLevel.Guest
-            };
+            //EmpArr[1] = new Employee
+            //{
+            //    ID = 2,
+            //    Name = "Omar",
+            //    SecurityLevel = SecurityLevel.Guest
+            //};
 
-            EmpArr[2] = new Employee
-            {
-                ID = 3,
-                Name = "Eman",
-                SecurityLevel = SecurityLevel.SecurityOfficer
-            };
+            //EmpArr[2] = new Employee
+            //{
+            //    ID = 3,
+            //    Name = "Eman",
+            //    SecurityLevel = SecurityLevel.SecurityOfficer
+            //};
+
+
+            Shape s = new Shape(10, 5);
+
+            Console.WriteLine(s.Area());
+            Console.WriteLine(s);
         }
 
     }
